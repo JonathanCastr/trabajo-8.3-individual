@@ -3,7 +3,8 @@ class ArticulosController < ApplicationController
 
   # GET /articulos or /articulos.json
   def index
-    @articulos = Articulo.all
+    # @articulos = Articulo.all
+    @articulos = Articulo.page(params[:page])
   end
 
   # GET /articulos/1 or /articulos/1.json

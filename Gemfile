@@ -65,3 +65,4 @@ group :development do
 end
 gem "bootstrap"
 gem "faker"
+gem "kaminari"

@@ -1,7 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Articulos</h1>
-
 <div id="articulos">
   <% @articulos.each do |articulo| %>
     <%= render articulo %>
@@ -12,3 +11,4 @@
 </div>
 
 <%= link_to "New articulo", new_articulo_path %>
+<%= paginate @articulos %>
